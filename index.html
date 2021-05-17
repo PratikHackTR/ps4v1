@@ -74,7 +74,9 @@ mymenu.style.display="block";
     <button style='font-size:25px;text-align:center;color:white' class="button button2" class="subnavbtn">Araçlar (güncellenecek)<i class="fa fa-caret-down"></i></button>&nbsp;
     <div class="subnav-content">
 	  <br><br><button onMouseOver="msgs.innerHTML='<U>güncellemeleri devre dışı bırak - v1.0 By Al Azif</U><br><br>PS4 güncelleme klasörüne sahte güncelleme dosyaları oluşturur ve sistemin güncelleme almasını & yapmasını engeller.<br>ayrıca Var olan dosyaları siler.<br> Bir kez çalıştırmanız yeterli.'"; onmouseout="msgs.innerHTML=''" onclick="load_disableupdates(); return false"><img src="img/disableupdates.png"></button>
+    <button onMouseOver="msgs.innerHTML='<U>Web Activator By Sleirsgoevy</U><br><br>Kırılmış ps4ler için PSN hesabı aktif edilir.<br>yedeklenmiş kayıtları yükleyebillir'"; onmouseout="msgs.innerHTML=''" onclick="load_webactivator(); return false"><img src="img/webactivator.png"></button>
       <button onMouseOver="msgs.innerHTML='<U>güncellemeleri etkinleştir - v1.0 By Al Azif</U><br><br>PS4 güncelleme klasörünün içinde oluşturulan sahte güncelleme dosyalarını kaldırır.<br>Konsolunuzu güncellemek isterseniz bunu çalıştırın.'"; onmouseout="msgs.innerHTML=''" onclick="load_enableupdates(); return false"><img src="img/enableupdates.png"></button>
+      <button onMouseOver="msgs.innerHTML='<U>WebRTE v1.0 - By PS4 Trainer</U><br><br>Açığı çalıştırın ve ps4trainer.com/Trainer/index.html adresine gidin oyun seçip istediğiniz hileyi açın.<br>hileler herhangi bir cihazda farketmeksizin çalışmakta.'"; onmouseout="msgs.innerHTML=''" onclick="load_webrte(); return false"><img src="img/WebRTE.png"></button>
 	  </div>
 	</div>
 	 
@@ -181,12 +183,7 @@ LoadedMSG="Enable-Updates yüklendi<br>PS butonuna basarak ana menüye dönebili
 PLfile = "payload/pl_disableupdates.bin";
 loadScript2();
 }
-function load_app2usb(){
-msgs.innerHTML="Loading App-To-Usb ...";
-LoadedMSG="App-To-Usb Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_app2usb.bin";
-loadScript2();
-}
+
 
 function load_ftp(){
 msgs.innerHTML="Loading Ftp ...";
@@ -195,171 +192,11 @@ PLfile = "payload/pl_ftp.bin";
 loadScript2();
 }
 
-function load_fakeusb(){
-msgs.innerHTML="Loading Fake Usb ...";
-LoadedMSG="Fake Usb Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile="payload/pl_fakeusb.bin";
-loadScript2();
-}
-
-function load_historyblocker(){
-msgs.innerHTML="Loading History-Blocker ...";
-LoadedMSG="History-Blocker Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_historyblocker.bin";
-loadScript2();
-}
-
-function load_ps4debug(){
-msgs.innerHTML="Loading Ps4-Debug ...";
-LoadedMSG="Ps4-Debug Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_ps4debug.bin";
-loadScript2();
-}
 
 function load_webactivator(){
 msgs.innerHTML="Loading Web-Activator ...";
 LoadedMSG="Web-Activator Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
 PLfile = "payload/pl_webactivator.bin";
-loadScript2();
-}
-
-function load_enablebrowser(){
-msgs.innerHTML="Loading Enable-Browser ...";
-LoadedMSG="Enable-Browser Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_enablebrowser.bin";
-loadScript2();
-}
-
-function load_rifrenamer(){
-msgs.innerHTML="Loading Rif-Renamer ...";
-LoadedMSG="Rif-Renamer Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_rifrenamer.bin";
-loadScript2();
-}
-
-function load_disableaslr(){
-msgs.innerHTML="Loading Disabled-ASLR ...";
-LoadedMSG="Disabled-ASLR Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_disableaslr.bin";
-loadScript2();
-}
-
-function load_exitidu(){
-msgs.innerHTML="Loading Exit-idu ...";
-LoadedMSG="Exit-idu Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_exitidu.bin";
-loadScript2();
-}
-
-function load_DBBackup(){
-msgs.innerHTML="Loading DB-backup ...";
-LoadedMSG="DB-backup Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_Backup.bin";
-loadScript2();
-}
-
-function load_SaveDataBackup(){
-msgs.innerHTML="Loading Save Data Backup ...";
-LoadedMSG="Save Data Backup Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_SaveDataBackup.bin";
-loadScript2();
-}
-
-function load_TrophyBackup(){
-msgs.innerHTML="Loading Trophy Backup ...";
-LoadedMSG="Trophy Backup Loaded<br>PS butonuna basarak ana menüye dönebilirsiniz";
-PLfile = "payload/pl_TrophyBackup.bin";
-loadScript2();
-}
-
-function load_OfflineCacheBackup(){
-msgs.innerHTML="Loading Offline Cache Backup ...";
-LoadedMSG="Offline Cache Backup Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_OfflineCacheBackup.bin";
-loadScript2();
-}
-
-function load_DBRestore(){
-msgs.innerHTML="Loading DB-Restore ...";
-LoadedMSG="DB-Restore Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_Restore.bin";
-loadScript2();
-}
-
-function load_SaveDataRestore(){
-msgs.innerHTML="Loading Save Data Restore ...";
-LoadedMSG="Save Data Restore Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_SaveDataRestore.bin";
-loadScript2();
-}
-
-function load_TrophyRestore(){
-msgs.innerHTML="Loading Trophy Restore ...";
-LoadedMSG="Trophy Restore Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_TrophyRestore.bin";
-loadScript2();
-}
-
-function load_OfflineCacheRestore(){
-msgs.innerHTML="Loading Offline Cache Restore ...";
-LoadedMSG="Offline Cache Restore Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_OfflineCacheRestore.bin";
-loadScript2();
-}
-
-function load_AnyCacheRestore(){
-msgs.innerHTML="Loading Cache Restore ...";
-LoadedMSG="Cache Restore Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_CacheRestore.bin";
-loadScript2();
-}
-
-function load_dumperg(){
-msgs.innerHTML="Loading Dumper ...";
-LoadedMSG="Dumper Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_dumperG.bin";
-loadScript2();
-}
-
-function load_dumpergu(){
-msgs.innerHTML="Loading Game & Update Dumper ...";
-LoadedMSG="Game & Update Dumper Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_dumperGU.bin";
-loadScript2();
-}
-
-function load_dumperu(){
-msgs.innerHTML="Loading Update Only Dumper ...";
-LoadedMSG="Update Only Dumper Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_dumperU.bin";
-loadScript2();
-}
-
-function load_dumperm(){
-msgs.innerHTML="Loading Dumper & Merge Game + Update...";
-LoadedMSG="Dumper & Merge Game + Update Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_dumperM.bin";
-loadScript2();
-}
-
-function load_kerneldumper(){
-msgs.innerHTML="Loading Kernel-Dumper ...";
-LoadedMSG="Kernel-Dumper Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_kerneldumper.bin";
-loadScript2();
-}
-
-function load_moduledumper(){
-msgs.innerHTML="Loading Module-Dumper ...";
-LoadedMSG="Module-Dumper Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_moduledumper.bin";
-loadScript2();
-}
-
-function load_enabledex(){
-msgs.innerHTML="Loading Enable-Dex ...";
-LoadedMSG="Enable-Dex Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_enabledex.bin";
 loadScript2();
 }
 
@@ -370,32 +207,6 @@ PLfile = "payload/pl_enabledev.bin";
 loadScript2();
 }
 
-function load_enablekratos(){
-msgs.innerHTML="Loading Enable-Kratos ...";
-LoadedMSG="Enable-Kratos Loaded<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_enablekratos.bin";
-loadScript2();
-}
-
-function load_backtoretail(){
-msgs.innerHTML="Loading Back-To-Retail ...";
-LoadedMSG="Back-To-Retail yüklendi<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_backtoretail.bin";
-loadScript2();
-}
-function load_FWspoof(){
-msgs.innerHTML="Loading Firmware Spoof...";
-LoadedMSG="Firmware Spoof yüklendi<br>Use The PS Button When Exiting The Menu";
-PLfile="payload/pl_FWspoof.bin";
-loadScript2();
-}
-
-function load_exitidu(){
-msgs.innerHTML="Loading Exit-idu ...";
-LoadedMSG="Exit-idu yüklendi<br>Use The PS Button When Exiting The Menu";
-PLfile = "payload/pl_exitidu.bin";
-loadScript2();
-}
 
 function load_webrte(){
 msgs.innerHTML="Loading WebRTE ...";
