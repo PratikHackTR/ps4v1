@@ -5,7 +5,7 @@
 <body id=cache style="color:white;font-size:20px;" onload="go();" class="bg">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.cache.innerHTML="Çevrimdışı veri yükleniyor: " + Percent + "%"};
-function DisplayCacheProgress(){setTimeout(function(){window.cache.innerHTML="Veri yüklemesi başarılı ✔";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.cache.innerHTML="İnterneti kapatın ve tarayıcıyı tekrar açın!!";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+function DisplayCacheProgress(){setTimeout(function(){window.cache.innerHTML="Veri yüklemesi başarılı ✔";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.cache.innerHTML="İnterneti kapatın ve tarayıcıyı tekrar açın!! <br><br>Kullanımı<br>önce JB kısmından bir jailbreak seçin konsolu kırdıktan sonra istediğiniz açığı yükleyebilirsiniz / First of all run any jailbreak v2 or v3 then u can run default or your payloads. <br><br> Çökmeler yaşanmasın istiyorsan lütfen internetini kapattıktan sonra playroom veya spotify gibi arkaplanda çalıştırabileceğin bir uygulama aç ve tarayıcıyıa sonra gir. <br> If u dont want any crash on your PS4 after the turning off internet open Playroom or Spotify for working background then open browser and try Jailbreak and payloads";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 
 <div id=dlog></div>
@@ -53,10 +53,10 @@ mymenu.style.display="block";
    <div id=mymenu style="display:none">
    <div class="navbar">
     <div class="subnav">
-    <button style='font-size:25px;text-align:center;color:white' class="button button2" class="subnavbtn" >Sleir JB<i class="fa fa-caret-down"></i></button>&nbsp;
+    <button style='font-size:25px;text-align:center;color:white' class="button button2" class="subnavbtn" >Jailbreak / Konsolu kır<i class="fa fa-caret-down"></i></button>&nbsp;
     <div class="subnav-content">
      <br><br><button  onMouseOver="msgs.innerHTML='<U>V3 - By Sleirsgoevy</U><br><br>2 Mayıs paylaşılan son sürüm.<br>12 saniyelik gecikme ile.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit_new(); return false"><img src="img/exploit.png"></button>
-     <button  onMouseOver="msgs.innerHTML='<U>V2 - By Sleirsgoevy</U><br><br>28 Nisan'da çıkan sürüm.<br>8 Saniyelik gecikme ile.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit(); return false"><img src="img/exploit.png"></button>
+     <button  onMouseOver="msgs.innerHTML='<U>V2 - By Sleirsgoevy</U><br><br>28 Nisan çıkışlı sürüm.<br>8 Saniyelik gecikme ile.'"; onmouseout="msgs.innerHTML=''" onclick="load_exploit(); return false"><img src="img/exploit.png"></button>
     </div>
   </div>
   
@@ -71,7 +71,7 @@ mymenu.style.display="block";
   </div>
   
   <div class="subnav">
-    <button style='font-size:25px;text-align:center;color:white' class="button button2" class="subnavbtn">Araçlar (güncellenecek)<i class="fa fa-caret-down"></i></button>&nbsp;
+    <button style='font-size:25px;text-align:center;color:white' class="button button2" class="subnavbtn">Araçlar (yeni özellikler eklenecek)<i class="fa fa-caret-down"></i></button>&nbsp;
     <div class="subnav-content">
 	  <br><br><button onMouseOver="msgs.innerHTML='<U>güncellemeleri devre dışı bırak - v1.0 By Al Azif</U><br><br>PS4 güncelleme klasörüne sahte güncelleme dosyaları oluşturur ve sistemin güncelleme almasını & yapmasını engeller.<br>ayrıca Var olan dosyaları siler.<br> Bir kez çalıştırmanız yeterli.'"; onmouseout="msgs.innerHTML=''" onclick="load_disableupdates(); return false"><img src="img/disableupdates.png"></button>
     <button onMouseOver="msgs.innerHTML='<U>Web Activator By Sleirsgoevy</U><br><br>Kırılmış ps4ler için PSN hesabı aktif edilir.<br>yedeklenmiş kayıtları yükleyebillir'"; onmouseout="msgs.innerHTML=''" onclick="load_webactivator(); return false"><img src="img/webactivator.png"></button>
